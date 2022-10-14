@@ -18,7 +18,7 @@ class FrankaPickNPlace(object):
 
         robot = moveit_commander.RobotCommander()
         scene = moveit_commander.PlanningSceneInterface()
-        group_name = "panda_arm"
+        group_name = "fr3_arm"
         move_group = moveit_commander.MoveGroupCommander(group_name)
         display_trajectory_publisher = rospy.Publisher(
             "/move_group/display_planned_path",
